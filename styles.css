@@ -3,31 +3,70 @@
 }
 
 body {
-  background-color: rgb(206, 199, 199);
+  background-color: hsl(210, 46%, 95%);
   height: 100vh;
   padding: 8%;
+  font-size: 13px;  
 }
 
 main {
   display: grid;
-  grid-template: repeat(2,1fr) / repeat(4, 1fr);
-  gap: 20px
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  gap: 20px;
 }
 
 article {
-    background-color: white;
+  background-color: white;
+  border-radius: 5px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.rol {
+  opacity: 50%;
+}
+
+.firstComment {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.secondComment {
+  opacity: 70%;
 }
 
 #article1 {
-    grid-area: 1 / 1 / span 1 / span 2;
+  grid-area: 1 / 1 / span 1 / span 2;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+}
+
+#article2 {
+  background-color: hsl(217, 19%, 35%);
+  color: white;
 }
 
 #article3 {
-    grid-area: 1 / 4 / span 2 / span 1;
+  grid-area: 1 / 4 / span 2 / span 1;
 }
 
 #article5 {
-    grid-area: 2 / 2 / span 1 / span 2;
+  grid-area: 2 / 2 / span 1 / span 2;
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+}
+
+header {
+  display: flex;
+  column-gap: 15px;
+}
+
+img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
 .attribution {
