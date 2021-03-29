@@ -11,11 +11,11 @@ body {
 }
 
 main {
-  display: grid;
+  /* display: grid; */
   /* grid-template: repeat(2, 1fr) / repeat(4, 1fr); */
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, min-content);
-  gap: 20px;
+  gap: 20px; */
 }
 
 article {
@@ -88,8 +88,9 @@ img {
 .images-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   column-gap: 15px;
+  margin-bottom: 20px;
 }
 
 .image {
